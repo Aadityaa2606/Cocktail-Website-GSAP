@@ -43,7 +43,9 @@ function Hero() {
         },
       })
       .to(".right-leaf", { y: 200 }, 0)
-      .to(".left-leaf", { y: -200 }, 0);
+      .to(".left-leaf", { y: -200 }, 0)
+      .to(".view-cocktails", { x: "40vw", autoAlpha: 0 }, 0)
+      .to(".left-cocktail-text", { x: "-40vw", autoAlpha: 0 }, 0);
 
     const startValue = isMobile ? "top 50%" : "center 60%";
     const endValue = isMobile ? "120% top" : "bottom top";
@@ -84,7 +86,7 @@ function Hero() {
 
         <div className="body">
           <div className="content">
-            <div className="space-y-5 hidden md:block">
+            <div className="space-y-5 hidden md:block left-cocktail-text">
               <p>Cool. Crisp. Classic</p>
               <p className="subtitle">
                 Sip the Spirit <br /> of the Leaf
