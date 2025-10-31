@@ -69,7 +69,7 @@ function Hero() {
 
   return (
     <>
-      <section id="hero" className="noisy">
+      <section id="hero">
         <h1 className="title">Mojito</h1>
 
         <img
